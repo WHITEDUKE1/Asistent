@@ -20,10 +20,8 @@ commands = {
         'open_instagram': ['instagram', 'открыть instagram', 'инста'],
         'open_instagram_clever': ['клевер', 'открыть клевер', 'инстаграм клевер'],
         'power_off': ['выключить', 'выключить компьютер', 'выключение'],
-        'nakrutka_instagram': ['накрутка', 'накрутка инстаграм', 'запустить накрутку'],
         'cls': ['очистка', 'очистить консоль', 'обнал'],
         'stop_firefox': ['остановка', 'остановить браузер', 'биглайк'],
-        'start_vinchik': ['леонардо', 'дайвинчик', 'лайки'],
         "ctime": ['текущее время', 'сейчас времени', 'который час', 'время'],
     }
 }
@@ -92,21 +90,12 @@ class Listener:
     def power_off(self):
         os.system('shutdown -s')
 
-
-    def nakrutka_instagram(self):
-        os.system(r'python  C:\Users\kokos\Desktop\programing\Python\Bots\Instagramnakrytka\BigLike\RunFile.py')
-
-
     def cls(self):
         os.system(f'cls')
 
 
     def stop_firefox(self):
         os.system('taskkill /IM firefox.exe /T /F')
-
-
-    def start_vinchik(self):
-        os.system(r'python  C:\Users\kokos\Desktop\programing\Python\Bots\NotLionatdo.py')
 
 
 def main():
